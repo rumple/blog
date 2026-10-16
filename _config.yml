@@ -1,0 +1,6 @@
+title: My Blog
+description: Articles by Amrut
+theme: minima
+plugins:
+  - jekyll-feed
+markdown: kramdown
