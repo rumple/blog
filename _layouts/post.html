@@ -1,4 +1,8 @@
 ---
 layout: default
 ---
-{%- include post.html post=page -%}
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <p class="byline">Amrut Joshi, <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+  {{ content }}
+</article>

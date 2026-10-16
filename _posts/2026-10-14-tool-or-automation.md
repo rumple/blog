@@ -26,8 +26,8 @@ The table shows the cost for each combination of these two properties.
 
 |  | Failures are easy to see | Failures are difficult to see |
 |---|---|---|
-| **Low abstraction** | **Low cost.** For example, a saw. | **Low cost.** You are near the work, so you see problems. |
-| **High abstraction** | **Low cost.** For example, a compiler. | **HIGH COST.** |
+| Low abstraction | **Low cost.** For example, a saw. | **Low cost.** You are near the work, so you see problems. |
+| High abstraction | **Low cost.** For example, a compiler. | **High cost.** |
 
 The high-cost area has a special problem. When the tool fails, you must repair the failure yourself. To do this, you must understand the work that the tool did. But the tool did that work for you, so you did not learn the skill that is necessary to understand it.
 
@@ -37,9 +37,9 @@ A high cost is a problem only when it is necessary for you to know the removed d
 
 The same LLM can be in different areas of the table. This changes with how you use it. For example:
 
-- **You read the paper. Then you tell the LLM to examine your understanding of it.** Low cost: low abstraction, and failures are easy to see because you know the paper. You keep the learning, because you did the reading.
-- **You tell it to change the format of a table that you understand.** Low cost: high abstraction, but failures are easy to see. It was not necessary for you to learn that step.
-- **You tell it to read the paper for you.** **High cost:** high abstraction, and failures are difficult to see. The removed details were the purpose of the work. Also, you cannot examine its summary unless you read the paper yourself.
+- {: .ex} **You read the paper. Then you tell the LLM to examine your understanding of it.** **Low cost:** low abstraction, and failures are easy to see because you know the paper. You keep the learning, because you did the reading.
+- {: .ex} **You tell it to change the format of a table that you understand.** **Low cost:** high abstraction, but failures are easy to see. It was not necessary for you to learn that step.
+- {: .ex .is-high} **You tell it to read the paper for you.** **High cost:** high abstraction, and failures are difficult to see. The removed details were the purpose of the work. Also, you cannot examine its summary unless you read the paper yourself.
 
 To decide if the cost is acceptable, do not ask "Is it a tool?" Ask these questions:
 
