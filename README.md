@@ -1,5 +1,7 @@
 # Blog
 
+Site URL: https://rumple.github.io/blog (repo must be named `blog`).
+
 To publish: add `_posts/YYYY-MM-DD-title.md` starting with
 
     ---

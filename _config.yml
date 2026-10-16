@@ -1,6 +1,12 @@
 title: My Blog
 description: Articles by Amrut
+url: https://rumple.github.io
+baseurl: /blog
 theme: minima
 plugins:
   - jekyll-feed
 markdown: kramdown
+
+# Analytics (optional): sign up free at goatcounter.com, then put your site
+# code here (e.g. "amrut" for amrut.goatcounter.com). Leave empty to disable.
+goatcounter: ""
