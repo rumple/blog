@@ -1,0 +1,4 @@
+<div class="post-date">{{ include.post.date | date: "%A, %B %-d, %Y" }}</div>
+<div class="post-title"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></div>
+<div class="post-content">{{ include.post.content }}</div>
+<div class="posted-by">posted by Amrut @ {{ include.post.date | date: "%-I:%M %p" }}</div>

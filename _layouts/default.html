@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{%- include head.html -%}
+<body>
+  <div class="blog-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
+  <div class="blog-desc">{{ site.description }}</div>
+  <div class="columns">
+    <div class="sidebar">
+      <div class="sidebar-title">Previous posts</div>
+      <ul>
+        {%- for p in site.posts limit:10 -%}
+        <li class="sidebar-item"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+        {%- endfor -%}
+      </ul>
+      <div class="sidebar-title">Archived Thoughts</div>
+      <ul>
+        {%- assign months = site.posts | group_by_exp: "p", "p.date | date: '%Y-%m'" -%}
+        {%- for m in months -%}
+        <li class="sidebar-item"><a href="{{ '/archive/' | relative_url }}#{{ m.name }}">{{ m.items.first.date | date: "%B %Y" }}</a></li>
+        {%- endfor -%}
+      </ul>
+      <div class="sidebar-title">Elsewhere</div>
+      <ul>
+        <li class="sidebar-item"><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li class="sidebar-item"><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      {{ content }}
+    </div>
+  </div>
+</body>
+</html>
