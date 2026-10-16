@@ -4,4 +4,20 @@ title: About
 permalink: /about/
 ---
 
-Write a few lines about yourself here.
+Hi, I'm Amrut. This is where I put random thoughts.
+
+## What I like
+
+- **Reading.** Books of all kinds, and long articles I never quite finish in one sitting.
+- **Music.** Listening to it constantly, and playing it when I can.
+- **Guitar.** Still learning, and enjoying it more than I'm good at it.
+
+## Tech I'm into
+
+- **LLMs and how to use them well.** Especially when to hand work to a model and when doing it yourself is the point.
+- **Evaluating LLM systems.** Test harnesses, prompt variants, and finding out whether a model's decisions are actually good.
+- **AI coding tools and agents.** What they do to the way we build software, and how to measure it honestly.
+- **Running models locally.** Tinkering with local models and small experiments, like getting a model to play a game.
+- **Tools, protocols and abstractions.** What a good abstraction hides, and what it costs you.
+
+The views here are my own.
