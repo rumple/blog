@@ -76,3 +76,5 @@ footer, .site-footer { color: var(--muted); font-size: 0.95rem; }
   .post table { font-size: 0.875rem; }
   .post td { padding: 0.7rem; }
 }
+.post tbody td:first-child { background: none; color: var(--muted); font-size: 0.85rem; padding: 0 0.5rem 0 0; vertical-align: middle; }
+.post tbody td:first-child strong { display: inline; margin: 0; font-weight: 400; }
