@@ -49,3 +49,8 @@ a:hover { text-decoration: underline; }
   .main { order: 1; margin: 0 20px; padding-left: 15px; }
   .blog-title, .blog-desc { padding-left: 20px; padding-right: 20px; }
 }
+
+.post-content table { border-collapse: collapse; margin: 1em 0; width: 100%; font-size: 14px; line-height: 1.4; }
+.post-content th, .post-content td { border: 1px solid $rule; padding: 8px 10px; text-align: left; vertical-align: top; }
+.post-content th { background: #f6f6f6; }
+.post-content hr { border: 0; border-top: 1px solid $rule; margin: 2em 0; }
