@@ -31,25 +31,21 @@ a:hover { text-decoration: underline; }
 .sidebar ul { margin: 0; padding: 0; list-style: none; }
 .sidebar-title { font-weight: bold; font-size: 19px; opacity: .9; padding: 20px 0 5px; }
 .sidebar-item { list-style: none; }
-.main { flex: 1; min-width: 0; max-width: 720px; padding-right: 40px; }
+.main { flex: 1; min-width: 0; max-width: 750px; margin-right: 40px; border-left: 1px solid $rule; padding-left: 30px; }
 
-.post-date {
-  border-left: 1px solid $rule; padding: 40px 0 10px 30px;
-  font-weight: bold; text-transform: uppercase;
-}
-.post-title { border-left: 1px solid $rule; padding: 0 0 10px 30px; font-weight: bold; text-decoration: underline; }
+.post-date { padding: 25px 0 10px; font-weight: bold; text-transform: uppercase; }
+.post-title { padding: 0 0 10px; font-weight: bold; text-decoration: underline; }
 .post-title a:link, .post-title a:visited { color: $text; }
-.post-content { border-left: 1px solid $rule; padding-left: 30px; overflow-wrap: anywhere; }
+.post-content { overflow-wrap: anywhere; }
 .post-content img { max-width: 100%; }
+.post-content pre, .post-content code { font-family: inherit; font-size: 14px; }
 .post-content pre { background: #f6f6f6; padding: 10px; overflow-x: auto; line-height: 1.4; }
 .post-content blockquote { margin-left: 0; padding-left: 15px; border-left: 3px solid $rule; color: $grey; }
-.posted-by { border-left: 1px solid $rule; padding-left: 30px; color: $light; }
-.posted-by::before { content: ""; display: block; border-top: 1px solid $rule; margin-bottom: 5px; }
+.posted-by { color: $light; border-top: 1px solid $rule; margin-top: 15px; padding-bottom: 40px; }
 
 @media (max-width: 760px) {
   .columns { flex-direction: column; }
   .sidebar { width: 100%; text-align: left; padding: 0 20px; order: 2; }
-  .main { padding: 0 20px; order: 1; }
+  .main { order: 1; margin: 0 20px; padding-left: 15px; }
   .blog-title, .blog-desc { padding-left: 20px; padding-right: 20px; }
-  .post-date, .post-title, .post-content, .posted-by { padding-left: 15px; }
 }
