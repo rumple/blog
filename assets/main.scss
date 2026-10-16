@@ -54,3 +54,9 @@ a:hover { text-decoration: underline; }
 .post-content th, .post-content td { border: 1px solid $rule; padding: 8px 10px; text-align: left; vertical-align: top; }
 .post-content th { background: #f6f6f6; }
 .post-content hr { border: 0; border-top: 1px solid $rule; margin: 2em 0; }
+.post-content table, .post-content th, .post-content td { overflow-wrap: normal; word-break: normal; }
+.post-content th:first-child { white-space: nowrap; }
+@media (max-width: 760px) {
+  .post-content table { font-size: 12px; }
+  .post-content th, .post-content td { padding: 6px; }
+}
