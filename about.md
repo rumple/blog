@@ -20,4 +20,8 @@ Hi, I'm Amrut. This is where I put random thoughts.
 - **Running models locally.** Tinkering with local models and small experiments, like getting a model to play a game.
 - **Tools, protocols and abstractions.** What a good abstraction hides, and what it costs you.
 
+## AI use disclaimer
+
+All the thoughts and opinions here are mine. I use AI heavily to help draft posts, but I keep strong editorial control: I shape, edit and sign off on everything before it goes up.
+
 The views here are my own.
