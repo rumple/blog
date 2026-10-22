@@ -85,4 +85,4 @@ A model starts without that experience, and at first every word looks equally im
 
 Real models are more complicated than this. A real model works with pieces of words rather than whole words, and it scores the words many times over, in many layers, each looking for something different. But the basic idea is the same as with the bakery sentence: look at all the words so far, decide which ones matter, and guess the next word.
 
-I described how the scoring works in more detail, still without math, in [Story of Attention]({% post_url 2026-10-21-story-of-attention %}).
+I described how the scoring works in more detail, still without math, in [Story of Attention]({{ site.baseurl }}{% post_url 2026-10-21-story-of-attention %}).
