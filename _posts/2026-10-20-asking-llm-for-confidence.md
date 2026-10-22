@@ -77,3 +77,9 @@ For example, think of an agent that answers customer-support questions by search
 A rule like this has the properties that an LLM's number does not have. The same information always gives the same confidence. The confidence depends on the information, not on the wording. And it is calibrated on our own kind of question, because it was built from our own records. It also gets better as we use it, because every reply adds to the record.
 
 The rule is only as good as the record, though. If nobody checks whether the replies were correct, there is nothing to learn from, and we are back to a number that nobody has measured.
+
+---
+
+*Edited on: October 22, 2026*
+This post was on Hacker News homepage for a few hours. Here's the discussion link: [Hacker News](https://news.ycombinator.com/item?id=50176082).
+
