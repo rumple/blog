@@ -2,7 +2,7 @@
 ---
 :root {
   --bg: #f5f6f4; --ink: #1a1f2b; --muted: #5a6170; --rule: #d9dce1; --cell: #e8ebee;
-  --high: #a3243b; --high-ink: #ffffff; --link: #1f4f7a; --code: #e8ebee;
+  --high: #a3243b; --high-ink: #ffffff; --link: #1f4f7a; --code: #e8ebee; --heading: var(--high);
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -29,8 +29,10 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 .site-header nav a { margin-right: 1rem; color: var(--muted); }
 
 h1 { font-size: 2.25rem; line-height: 1.15; margin: 0 0 1rem; letter-spacing: -0.01em; }
-h2 { font-size: 1.375rem; line-height: 1.3; margin: 3rem 0 0.75rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
-h3 { font-size: 1.15rem; margin: 2rem 0 0.5rem; }
+h2, h3 { font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif; color: var(--heading); }
+h2 { font-size: 1.6rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.01em; margin: 3.5rem 0 1rem; }
+h2::before { content: ""; display: block; width: 2.5rem; height: 3px; background: var(--heading); margin-bottom: 0.9rem; }
+h3 { font-size: 1.2rem; font-weight: 600; margin: 2.25rem 0 0.5rem; }
 p { margin: 0 0 1.1rem; }
 strong { font-weight: 700; }
 .byline { color: var(--muted); font-size: 0.95rem; margin-bottom: 2rem; }
