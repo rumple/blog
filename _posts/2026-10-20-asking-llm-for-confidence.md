@@ -83,3 +83,5 @@ The rule is only as good as the record, though. If nobody checks whether the rep
 *Edited on: October 22, 2026*
 This post was on Hacker News homepage for a few hours. Here's the discussion link: [Hacker News](https://news.ycombinator.com/item?id=50176082).
 
+*Edited on: November 6, 2026*
+I wrote a follow-up that looks at whether a decision model does better than an LLM at giving probabilities: [The Narrow Case for Jev]({{ site.baseurl }}{% post_url 2026-11-04-the-narrow-case-for-jev %}).
