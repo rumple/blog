@@ -3,12 +3,14 @@
 :root {
   --bg: #f5f6f4; --ink: #1a1f2b; --muted: #5a6170; --rule: #d9dce1; --cell: #e8ebee;
   --high: #a3243b; --high-ink: #ffffff; --link: #1f4f7a; --code: #e8ebee; --heading: var(--high);
+  --mark: #f2d6dc;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #15181e; --ink: #e6e8ec; --muted: #9aa1ad; --rule: #2c313a; --cell: #20242c;
     --high: #d9506a; --high-ink: #15181e; --link: #8cb8e6; --code: #20242c;
+    --mark: #4a2731;
     color-scheme: dark;
   }
 }
@@ -35,6 +37,12 @@ h2::before { content: ""; display: block; width: 2.5rem; height: 3px; background
 h3 { font-size: 1.2rem; font-weight: 600; margin: 2.25rem 0 0.5rem; }
 p { margin: 0 0 1.1rem; }
 strong { font-weight: 700; }
+/* Serif bold is close to regular weight, so mark emphasis with a highlighter band too */
+.post p strong, .post li strong {
+  background: linear-gradient(transparent 55%, var(--mark) 55%);
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  padding: 0 0.1em;
+}
 .byline { color: var(--muted); font-size: 0.95rem; margin-bottom: 2rem; }
 hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 1.5rem; }
 img { max-width: 100%; }
